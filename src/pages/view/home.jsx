@@ -18,7 +18,8 @@ const Home = () => {
     if (date) {
       const interval = setInterval(() => {
         const currentTime = new Date().getTime();
-        const timeDifference = new Date(date).getTime() - currentTime;
+
+        const timeDifference = new Date(`${date}T00:00:00`).getTime() - currentTime;
 
         if (timeDifference <= 0) {
           clearInterval(interval);
