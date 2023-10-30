@@ -1,0 +1,105 @@
+@import url("https://fonts.google.com/specimen/Red+Hat+Text");
+body {
+  background: url("/./bg-stars.svg"), url("/./pattern-hills.svg");
+  background-color: hsl(235, 16%, 14%);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+.container {
+  height: 97.5vh;
+  display: flex;
+  justify-content: center;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.countdownOver {
+  display: flex;
+  align-items: center;
+}
+.countdownOver h1 {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 43px;
+  animation-name: countdown;
+  animation-duration: 4s;
+}
+@media screen and (max-width: 728px) {
+  .countdownOver h1 {
+    font-size: 30px;
+  }
+}
+
+.mainPage {
+  width: 50%;
+  margin-top: 6%;
+}
+@media screen and (max-width: 728px) {
+  .mainPage {
+    width: 90%;
+    margin-top: 30%;
+  }
+}
+.mainPage .titlePage h1 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 10px;
+}
+@media screen and (max-width: 728px) {
+  .mainPage .titlePage h1 {
+    letter-spacing: 5px;
+  }
+}
+.mainPage .cardCont {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.mainPage .cardCont .card .cardTimer {
+  background-color: hsl(236, 21%, 26%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 130px;
+  margin-top: 40px;
+  color: hsl(345, 95%, 68%);
+  font-size: 35px;
+}
+@media screen and (max-width: 728px) {
+  .mainPage .cardCont .card .cardTimer {
+    width: 75px;
+    height: 75px;
+    font-size: 18px;
+  }
+}
+.mainPage .cardCont .card .cardDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(237, 18%, 59%);
+  font-size: 7px;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 728px) {
+  .mainPage .cardCont .card .cardDesc {
+    font-size: 5px;
+    letter-spacing: 2px;
+  }
+}
+.mainPage .socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-top: 25%;
+}
+@media screen and (max-width: 728px) {
+  .mainPage .socialMedia {
+    margin-top: 60%;
+  }
+}/*# sourceMappingURL=app.css.map */

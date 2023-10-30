@@ -1,0 +1,94 @@
+@import "./variables.scss";
+@import "./mediaquery.scss";
+@import "./component.scss";
+@import url("https://fonts.google.com/specimen/Red+Hat+Text");
+
+body {
+  background: url("/./bg-stars.svg"), url("/./pattern-hills.svg");
+  background-color: $verydarkblue;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+.container {
+  height: 97.5vh;
+  display: flex;
+  justify-content: center;
+  font-family: $family;
+}
+
+.countdownOver {
+  display: flex;
+  align-items: center;
+  h1 {
+    text-align: center;
+    color: $white;
+    font-size: 43px;
+    animation-name: countdown;
+    animation-duration: 4s;
+    @include query {
+      font-size: 30px;
+    }
+  }
+}
+
+.mainPage {
+  width: 50%;
+  margin-top: 6%;
+  @include query {
+    width: 90%;
+    margin-top: 30%;
+  }
+  .titlePage {
+    h1 {
+      color: $white;
+      text-align: center;
+      font-size: $fontsize;
+      letter-spacing: 10px;
+      @include query {
+        letter-spacing: 5px;
+      }
+    }
+  }
+  .cardCont {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10%;
+
+    .card {
+      .cardTimer {
+        @include card;
+        @include center;
+        width: 150px;
+        height: 130px;
+        margin-top: 40px;
+        color: $softred;
+        font-size: 35px;
+        @include query {
+          width: 75px;
+          height: 75px;
+          font-size: 18px;
+        }
+      }
+      .cardDesc {
+        @include center;
+        color: $grayishblue;
+        font-size: 7px;
+        letter-spacing: 5px;
+        @include query {
+          font-size: 5px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  .socialMedia {
+    @include center;
+    gap: 5%;
+    margin-top: 25%;
+    @include query {
+      margin-top: 60%;
+    }
+  }
+}
